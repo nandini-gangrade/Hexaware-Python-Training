@@ -63,26 +63,69 @@ These performance measures help organizations gauge the effectiveness, efficienc
 ![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/2db7763c-7b48-46b9-8508-52c65c4fbd2c)
 
 1. *concurrent*
-![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/d139d2a6-74b2-4501-8dea-6483f64a31ec)
     - Concurrent problems involve multiple tasks or processes that can potentially run simultaneously or concurrently.
     - These tasks may share resources, such as memory or files, and may need to coordinate with each other to avoid conflicts and ensure correctness.
     - Examples of concurrent problems include multi-threading in software applications, concurrent access to shared data structures, and distributed computing tasks.
+ 
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/d139d2a6-74b2-4501-8dea-6483f64a31ec)
 
 2. *sequential*
-![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/d22a4ac2-61b0-4704-b077-c3ee79172c28)
    - Sequential problems involve tasks or processes that must be executed in a specific order, one after the other, without any parallel execution.
    - These problems typically have a clear sequence of steps or dependencies that must be followed.
    - Examples of sequential problems include sorting algorithms like bubble sort or insertion sort, where each step depends on the result of the previous step.
+ 
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/d22a4ac2-61b0-4704-b077-c3ee79172c28)
 
 3. *Distributed Problems:*
    - Distributed problems involve tasks or processes that are spread across multiple computers or nodes in a network.
    - These tasks often require communication and coordination between different nodes to achieve a common goal.
    - Examples of distributed problems include distributed databases, distributed file systems, and distributed computing tasks such as map-reduce.
 
+ ![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/82afecc4-465b-4258-9223-2a6b3bea5d71)
+
 4. *Event-Based Problems:*
    - Event-based problems involve responding to events or triggers that occur asynchronously.
    - These events can come from various sources, such as user input, hardware interrupts, or messages from other processes.
    - Event-based systems typically use event loops or callback mechanisms to handle events as they occur.
    - Examples of event-based problems include graphical user interfaces (GUIs), network servers handling incoming requests, and real-time systems reacting to sensor data.
+  
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/0ed8590c-3ae9-4a3a-adba-ef9022498dca)
 
 Each type of problem requires different approaches and techniques for solution development, and understanding the characteristics of each can help in choosing the most appropriate strategy.
+
+### How does App work
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/084d0c8f-7baf-4d6e-836f-e4bad399288c)
+
+ - Concurrent: Simultaneous handling of multiple user requests, ensuring data integrity.
+Example: Managing orders from multiple users placed simultaneously.
+ - Sequential: Tasks executed in a specific order for order processing and transaction integrity.
+Example: Verifying item availability, calculating total price, processing payment, and confirming orders.
+ - Distributed: Operating across multiple interconnected servers to handle high traffic and ensure scalability.
+Example: Servers distributed geographically to serve users in different regions.
+ - Event-Based: Asynchronous response to events or triggers for real-time updates and notifications.
+Example: Generating notifications to kitchen staff and updating order status in real-time when a new order is placed.
+
+## Problem Solving Methods
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/a5cabf37-65f4-42c4-bac9-98479e061cc3)
+
+**1. Brute force:**   Brute force involves trying every possible solution to a problem until a satisfactory one is found. <br>
+Example: To find the maximum value in an array, you iterate through each element and compare it with the current maximum value.
+   ![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/17e75afd-62a3-4fb8-8bdf-40feaa716b58)
+  ![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/60c94654-eec7-4629-8471-5362d1d6c602)
+
+**2. Greedy:**
+   Greedy algorithms make locally optimal choices at each step with the hope of finding a global optimum. <br>
+   Example: The greedy algorithm for the "Coin Change" problem selects the largest coin denomination that is less than or equal to the remaining amount at each step.
+   ![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/7ec4430c-cd99-4c61-b09b-cf252431d353)
+
+**3. Divide and Conquer:**
+Divide and conquer involves breaking a problem into smaller, more manageable subproblems, solving them recursively, and combining their solutions to solve the original problem. <br>
+Example: Merge Sort divides an array into two halves, sorts each half recursively, and then merges the sorted halves.
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/920508d0-f4d0-43f5-9bf9-a96b7d720c31)
+
+**4. Dynamic Programming:**
+Dynamic programming solves problems by breaking them down into simpler overlapping subproblems and solving each subproblem only once, storing the results to avoid redundant calculations.(pattern - no. of ways) <br>
+Example: The Fibonacci sequence can be efficiently calculated using dynamic programming to avoid redundant calculations of Fibonacci numbers.
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/88c8b8b4-6b31-4531-aa45-185d76b681e6)
+
+Each of these problem-solving methods has its strengths and weaknesses, and choosing the appropriate method depends on the nature of the problem and its constraints.
