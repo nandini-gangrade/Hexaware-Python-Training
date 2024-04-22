@@ -105,27 +105,78 @@ Example: Servers distributed geographically to serve users in different regions.
  - Event-Based: Asynchronous response to events or triggers for real-time updates and notifications.
 Example: Generating notifications to kitchen staff and updating order status in real-time when a new order is placed.
 
-## Problem Solving Methods
+## 4. Problem Solving Methods
 ![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/a5cabf37-65f4-42c4-bac9-98479e061cc3)
 
 **1. Brute force:**   Brute force involves trying every possible solution to a problem until a satisfactory one is found. <br>
 Example: To find the maximum value in an array, you iterate through each element and compare it with the current maximum value.
+
    ![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/17e75afd-62a3-4fb8-8bdf-40feaa716b58)
   ![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/60c94654-eec7-4629-8471-5362d1d6c602)
 
 **2. Greedy:**
    Greedy algorithms make locally optimal choices at each step with the hope of finding a global optimum. <br>
    Example: The greedy algorithm for the "Coin Change" problem selects the largest coin denomination that is less than or equal to the remaining amount at each step.
+   
    ![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/7ec4430c-cd99-4c61-b09b-cf252431d353)
 
 **3. Divide and Conquer:**
 Divide and conquer involves breaking a problem into smaller, more manageable subproblems, solving them recursively, and combining their solutions to solve the original problem. <br>
 Example: Merge Sort divides an array into two halves, sorts each half recursively, and then merges the sorted halves.
+
 ![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/920508d0-f4d0-43f5-9bf9-a96b7d720c31)
 
 **4. Dynamic Programming:**
 Dynamic programming solves problems by breaking them down into simpler overlapping subproblems and solving each subproblem only once, storing the results to avoid redundant calculations.(pattern - no. of ways) <br>
 Example: The Fibonacci sequence can be efficiently calculated using dynamic programming to avoid redundant calculations of Fibonacci numbers.
+
 ![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/88c8b8b4-6b31-4531-aa45-185d76b681e6)
 
 Each of these problem-solving methods has its strengths and weaknesses, and choosing the appropriate method depends on the nature of the problem and its constraints.
+
+## 5. Modeling Tools
+
+**1. Flow Charts:**
+Flow charts are graphical representations of processes or workflows. They use different shapes to represent various steps, decisions, and actions in a process, connected by arrows indicating the flow. <br>
+Example: Flow chart for an online shopping process, showing steps like selecting items, adding to cart, checkout, and payment. <br>
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/7ab9c622-31c4-419d-bc41-e474d56c8de0)
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/d7255433-dee3-4321-bf04-502b42ed195c)
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/96bf2ae8-84f0-45d8-85cc-94ba8a678d80)
+
+
+**2. Data Flow Diagrams (DFD):**
+DFDs depict the flow of data through a system. They illustrate how data is input, processed, stored, and outputted within a system or process. DFDs consist of processes, data stores, data flows, and external entities. <br>
+Example: DFD for a student registration system, showing processes like student registration, course selection, and generating student IDs. <br>
+![WhatsApp Image 2024-04-22 at 15 51 39_501a883a](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/ce3cf592-646a-4eaa-ba49-1323baf64179)
+
+**3. Entity-Relationship (ER) Diagram:**
+ER diagrams represent the relationships between entities in a database. They use entities (objects), attributes, and relationships to model the structure of a database schema. ER diagrams are useful for designing and visualizing database schemas. <br>
+Example: ER diagram for a university database, showing entities like students, courses, professors, and relationships like enrollment and teaching. <br>
+![WhatsApp Image 2024-04-22 at 15 51 39_a7c626b3](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/220050b6-592f-47c6-8f64-c96154a6087f)
+
+
+**4. Unified Modeling Language (UML):**
+UML is a standardized modeling language used to visualize, specify, construct, and document software systems. It includes various diagrams like class diagrams, use case diagrams, sequence diagrams, and more, each serving different modeling purposes. <br>
+Example: UML class diagram for a Python application, showing classes, attributes, methods, and their relationships. <br>
+![WhatsApp Image 2024-04-22 at 15 51 40_7f98316b](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/1527ccae-e7c1-4284-af3d-cc3f36e84e61)
+
+
+In Python, you can use libraries like pygraphviz, matplotlib, or graphviz to create visual representations of these models programmatically. You can also use specialized UML modeling tools that support Python code generation to create UML diagrams directly from your code.
+
+## 6. Algorithm
+![WhatsApp Image 2024-04-22 at 15 51 41_16e4dc42](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/ac406471-24c5-4ebe-b115-64c3ec289fbe)
+
+![WhatsApp Image 2024-04-22 at 15 51 41_1a514c45](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/5ad710a7-5730-4d96-80be-8b5b0eb8bcdc)
+
+![WhatsApp Image 2024-04-22 at 15 51 42_0bb67d5c](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/9be6ec50-8afa-4bf3-855c-48dda682f5e9)
+
+### Different Patterns in Algo
+![WhatsApp Image 2024-04-22 at 15 51 43_59ae8362](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/895be501-c4ea-4404-8731-96caba3c948e)
+
+![WhatsApp Image 2024-04-22 at 15 51 43_d0dd2a09](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/86e681c6-c29c-41d3-9b78-989579717d08)
+
+![WhatsApp Image 2024-04-22 at 15 51 44_5126b8a5](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/1c5c12e2-3182-4e8b-80da-e5544b63116c)
+
+## 7. Data Structures
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/76e4bdb8-a398-45c1-9991-ce09d8b6412b)
+
