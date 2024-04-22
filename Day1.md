@@ -178,5 +178,240 @@ In Python, you can use libraries like pygraphviz, matplotlib, or graphviz to cre
 ![WhatsApp Image 2024-04-22 at 15 51 44_5126b8a5](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/1c5c12e2-3182-4e8b-80da-e5544b63116c)
 
 ## 7. Data Structures
-![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/76e4bdb8-a398-45c1-9991-ce09d8b6412b)
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/52c6e42f-7dd3-4b09-9783-247461d0b1a9)
 
+### Types of DS
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/b416cde2-d046-4dfb-9ec2-e58054c95790)
+
+**Linear Data Structures:** Linear data structures organize data elements sequentially, one after the other, in a linear order.
+Elements are accessed and traversed sequentially, typically from the beginning to the end.
+Examples of linear data structures include arrays, linked lists, stacks, and queues.
+Linear data structures are suitable for situations where data elements have a linear relationship and need to be accessed or processed in a sequential manner.
+**Non-linear Data Structures:** Non-linear data structures organize data elements in a hierarchical or interconnected manner, where elements are not necessarily arranged sequentially.
+Elements may have multiple relationships and connections with other elements.
+Examples of non-linear data structures include trees, graphs, and hash tables.
+Non-linear data structures are suitable for representing complex relationships and dependencies among data elements, allowing for efficient retrieval, traversal, and manipulation of data.
+
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/c6841517-48c9-4136-9586-87ed4118e4a3)
+
+**Static Data Structures:** Static data structures have fixed sizes and memory allocation at compile time.
+Once created, the size and structure of a static data structure cannot be changed during runtime.
+<br>Examples include arrays and fixed-size arrays in languages like C and C++.
+Static data structures are efficient in terms of memory usage and access time but lack flexibility in handling varying amounts of data.
+**Dynamic Data Structures:** Dynamic data structures allocate memory dynamically during runtime, allowing for flexibility in size and structure.
+Dynamic data structures can grow or shrink as needed, adapting to changing data requirements.
+<br>Examples include linked lists, stacks, queues, trees, and hash tables.
+Dynamic data structures are versatile and can efficiently handle dynamic data sets, but they may incur overhead due to memory allocation and deallocation operations.
+
+### Fundamental DS
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/a8e83c4e-1a5f-4991-a4cc-8a8a6b6d2c9c)
+
+**Linear Data Structures:**
+
+1. Arrays:
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/8ec2966f-aedc-4ab9-a46e-190b14477008)
+
+Arrays are linear data structures where elements are stored sequentially in contiguous memory locations.
+Elements are accessed using an index, and they have a fixed size.
+Examples: One-dimensional arrays, multi-dimensional arrays.
+
+3. Linked Lists:
+Linked lists are linear data structures consisting of nodes where each node contains a value and a reference to the next node.
+Nodes are connected sequentially, and elements are accessed by traversing from the head to the tail.
+Examples: Singly linked lists, doubly linked lists, circular linked lists.
+
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/c3017036-905d-4c77-8b06-a06b8a4d928b)
+
+
+4. Stacks:
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/d6988c35-8d20-4262-8ae8-a1ce8ae564fb)
+
+Stacks are linear data structures that follow the Last-In-First-Out (LIFO) principle.
+Elements are added and removed from the same end, typically called the top.
+Examples: Function call stack, expression evaluation stack.
+
+> Attributes:
+ - Capacity: The maximum number of elements that a stack can hold. This attribute is often associated with statically allocated stacks.
+ - Size: The current number of elements present in the stack.
+ - Top: A reference to the top element of the stack. This is where elements are added (pushed) and removed (popped).
+
+> Operations:
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/ca957181-6795-479a-a637-92cf0f3927c9)
+- Push: Add an element to the top of the stack.
+If the stack is full (in the case of a bounded stack), a stack overflow error may occur.
+ - Pop: Remove and return the element at the top of the stack.
+If the stack is empty, a stack underflow error may occur.
+ - Peek (or Top): Return the element at the top of the stack without removing it.
+This operation allows you to inspect the top element without modifying the stack.
+- IsEmpty: Check if the stack is empty.
+Returns true if the stack contains no elements, false otherwise.
+ - IsFull: Check if the stack is full (applicable only for bounded stacks).
+Returns true if the stack has reached its maximum capacity, false otherwise.
+- Size: Return the number of elements currently present in the stack.
+
+5. Queues:
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/c1a89fb5-0c1d-4282-be51-6947532a73bd)
+
+Queues are linear data structures that follow the First-In-First-Out (FIFO) principle.
+Elements are added at the rear (enqueue) and removed from the front (dequeue).
+Examples: Waiting queues, task scheduling queues.
+
+> Attributes:
+- Capacity: The maximum number of elements that a queue can hold. This attribute is often associated with bounded queues.
+- Size: The current number of elements present in the queue.
+- Front: A reference to the front element of the queue. This is where elements are removed (dequeued).
+- Rear (or Back): A reference to the rear element of the queue. This is where elements are added (enqueued).
+
+> Operations:
+- Enqueue: Add an element to the rear of the queue.
+If the queue is full (in the case of a bounded queue), a queue overflow error may occur.
+- Dequeue: Remove and return the element at the front of the queue.
+If the queue is empty, a queue underflow error may occur.
+- Front: Return the element at the front of the queue without removing it.
+This operation allows you to inspect the front element without modifying the queue.
+- IsEmpty: Check if the queue is empty.
+Returns true if the queue contains no elements, false otherwise.
+- IsFull: Check if the queue is full (applicable only for bounded queues).
+Returns true if the queue has reached its maximum capacity, false otherwise.
+- Size: Return the number of elements currently present in the queue.
+
+These attributes and operations define the behavior and functionality of a queue data structure, which follows the First-In-First-Out (FIFO) principle. Queues are commonly used in various applications such as task scheduling, process management, and breadth-first search algorithms.
+
+7. Tables:
+Tables are linear data structures similar to arrays but with more flexible sizes and operations for data manipulation.
+They are often implemented using arrays or dynamic arrays, providing functionality for adding, removing, and accessing elements efficiently.
+Examples: Hash tables, dictionaries, associative arrays.
+
+**Non-Linear Data Structures:**
+
+1. Trees:
+Trees are non-linear data structures consisting of nodes connected hierarchically.
+Each node can have zero or more child nodes, forming a tree-like structure.
+Examples: Binary trees, AVL trees, B-trees, Trie.
+
+2. Graphs:
+Graphs are non-linear data structures consisting of nodes (vertices) connected by edges.
+Nodes can have multiple connections, and edges can be directed or undirected.
+Examples: Directed graph, undirected graph, weighted graph.
+
+3. Sets:
+Sets are non-linear data structures that store unique elements without any particular order.
+They ensure that no duplicate elements are stored, making them suitable for various mathematical and computational operations.
+Examples: Hash sets, tree sets, bit sets.
+
+
+Here's a table summarizing the differences between different data structures:
+
+| Attribute           | Arrays            | Linked Lists     | Stacks           | Queues           | Trees            | Graphs           | Hash Tables      | Sets             |
+|---------------------|-------------------|------------------|------------------|------------------|------------------|------------------|------------------|------------------|
+| Storage             | Contiguous memory | Non-contiguous   | NA               | NA               | NA               | NA               | NA               | NA               |
+|                     | block             | nodes            |                  |                  |                  |                  |                  |                  |
+| Size                | Fixed             | Dynamic          | Dynamic          | Dynamic          | Dynamic          | Dynamic          | Dynamic          | Dynamic          |
+| Access Time         | Constant          | Linear           | Constant         | Constant         | Logarithmic      | Logarithmic      | Average constant | Average constant |
+| Insertion Time      | NA                | Constant         | Constant         | Constant         | Logarithmic      | Logarithmic      | Average constant | Average constant |
+| Deletion Time       | NA                | Constant         | Constant         | Constant         | Logarithmic      | Logarithmic      | Average constant | Average constant |
+| Usage               | Random access     | Sequential       | LIFO             | FIFO             | Hierarchical     | Networks        | Key-value store  | Unique elements  |
+| Operations          | Index-based       | Pointer-based    | Push, Pop        | Enqueue, Dequeue | Insert, Delete   | Insert, Delete   | Insert, Delete   | Membership check |
+| Examples            | Static lists      | Memory           | Undo mechanisms  | Print queues     | File systems     | Social networks  | Databases        | Mathematical sets|
+
+This table provides a quick overview of the differences between various fundamental data structures based on key attributes such as storage, size, access time, operations, and examples of usage.
+Each of these data structures serves different purposes and has specific characteristics, operations, and use cases in solving computational problems and organizing data efficiently.
+
+
+## Algorithmn Design
+
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/d7b5f951-903f-4ab2-be40-cfdac886163c)
+
+> Searching Algorithms:
+
+- Linear Search:
+Linear search iterates through each element in a list sequentially until the target element is found or the end of the list is reached.
+Example: Searching for a specific number in an unsorted list of numbers.
+
+- Binary Search:
+Binary search is a divide-and-conquer algorithm that requires the list to be sorted.
+It repeatedly divides the search interval in half until the target element is found or the search interval is empty.
+Example: Searching for a specific number in a sorted list of numbers.
+
+> Sorting Algorithms:
+
+- Bubble Sort:
+Bubble sort compares adjacent elements and swaps them if they are in the wrong order.
+It repeatedly passes through the list until the list is sorted.
+Example: Sorting an array of numbers in ascending order.
+
+Given list [77, 42, 35, 12, 100, 5] in increasing order:
+Pass 1:
+Compare adjacent elements and swap if necessary:
+[42, 77, 35, 12, 100, 5]
+[42, 35, 77, 12, 100, 5]
+[42, 35, 12, 77, 100, 5]
+[42, 35, 12, 77, 100, 5]
+[42, 35, 12, 77, 5, 100]
+Pass 2:
+Compare adjacent elements and swap if necessary:
+[35, 42, 12, 77, 5, 100]
+[35, 12, 42, 77, 5, 100]
+[35, 12, 42, 5, 77, 100]
+[35, 12, 42, 5, 77, 100]
+Pass 3:
+Compare adjacent elements and swap if necessary:
+[12, 35, 42, 5, 77, 100]
+[12, 35, 5, 42, 77, 100]
+[12, 35, 5, 42, 77, 100]
+Pass 4:
+Compare adjacent elements and swap if necessary:
+[12, 5, 35, 42, 77, 100]
+[12, 5, 35, 42, 77, 100]
+Pass 5:
+Compare adjacent elements and swap if necessary:
+[5, 12, 35, 42, 77, 100]
+Now, the list is sorted in increasing order: [5, 12, 35, 42, 77, 100].
+
+- Selection Sort:
+Selection sort divides the input list into two parts: sorted and unsorted.
+It repeatedly selects the smallest (or largest) element from the unsorted part and moves it to the sorted part.
+Example: Sorting an array of numbers in ascending order.
+
+- Insertion Sort:
+Insertion sort builds the final sorted list one element at a time by repeatedly taking the next element and inserting it into the proper position in the already sorted part.
+Example: Sorting an array of numbers in ascending order.
+
+given list [12, 10, 36, 6, 24].
+
+Pass 1:
+Start with the second element (10).
+Compare it with the element to its left (12).
+Since 10 is smaller than 12, swap them.
+The list becomes [10, 12, 36, 6, 24].
+Pass 2:
+Start with the third element (36).
+Compare it with the elements to its left (12 and 10).
+Since 36 is larger than both 12 and 10, leave it as it is.
+The list remains [10, 12, 36, 6, 24].
+Pass 3:
+Start with the fourth element (6).
+Compare it with the elements to its left (36, 12, and 10).
+Since 6 is smaller than 36, shift 36 to the right.
+Continue comparing with 12 and 10 and shift them to the right accordingly.
+Insert 6 into its correct position.
+The list becomes [6, 10, 12, 36, 24].
+Pass 4:
+Start with the fifth element (24).
+Compare it with the elements to its left (36 and 12).
+Since 24 is smaller than 36, shift 36 to the right.
+Insert 24 into its correct position.
+The list becomes [6, 10, 12, 24, 36].
+Now, the list [12, 10, 36, 6, 24] is sorted using the Insertion Sort algorithm. The sorted list is [6, 10, 12, 24, 36].
+
+- Merge Sort:
+Merge sort is a divide-and-conquer algorithm that divides the input list into smaller sublists, sorts them, and then merges them back together.
+It is a stable sorting algorithm and guarantees O(n log n) time complexity.
+Example: Sorting an array of numbers in ascending order.
+
+- Quick Sort:
+Quick sort is a divide-and-conquer algorithm that selects a pivot element and partitions the input list into two sublists: elements smaller than the pivot and elements larger than the pivot.
+It then recursively sorts the two sublists.
+Example: Sorting an array of numbers in ascending order.
+
+These algorithms provide different approaches to searching and sorting data, each with its own advantages and disadvantages in terms of time complexity, space complexity, stability, and ease of implementation.
