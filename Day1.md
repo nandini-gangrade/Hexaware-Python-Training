@@ -379,7 +379,7 @@ Bubble sort compares adjacent elements and swaps them if they are in the wrong o
 It repeatedly passes through the list until the list is sorted.
 Example: Sorting an array of numbers in ascending order.
 
-Given list [77, 42, 35, 12, 100, 5] in increasing order:
+``` Given list [77, 42, 35, 12, 100, 5] in increasing order:
 Pass 1:
 Compare adjacent elements and swap if necessary:
 [42, 77, 35, 12, 100, 5]
@@ -406,12 +406,13 @@ Pass 5:
 Compare adjacent elements and swap if necessary:
 [5, 12, 35, 42, 77, 100]
 Now, the list is sorted in increasing order: [5, 12, 35, 42, 77, 100].
+```
 
 - Selection Sort:
 Selection sort divides the input list into two parts: sorted and unsorted.
 It repeatedly selects the smallest (or largest) element from the unsorted part and moves it to the sorted part.
 Example: Sorting an array of numbers in ascending order.
-
+```
 given list [75, 28, 65, 30, 20].
 Selection Sort works by repeatedly finding the minimum element from the unsorted part of the list and swapping it with the first unsorted element. Here's how it works step by step:
 Pass 1:
@@ -433,13 +434,12 @@ The list remains [20, 28, 30, 65, 75].
 Pass 5:
 There is only one element left, so no action is needed.
 Now, the list [75, 28, 65, 30, 20] is sorted using the Selection Sort algorithm. The sorted list is [20, 28, 30, 65, 75].
-
+```
 - Insertion Sort:
 Insertion sort builds the final sorted list one element at a time by repeatedly taking the next element and inserting it into the proper position in the already sorted part.
 Example: Sorting an array of numbers in ascending order.
-
+```
 given list [12, 10, 36, 6, 24].
-
 Pass 1:
 Start with the second element (10).
 Compare it with the element to its left (12).
@@ -464,12 +464,12 @@ Since 24 is smaller than 36, shift 36 to the right.
 Insert 24 into its correct position.
 The list becomes [6, 10, 12, 24, 36].
 Now, the list [12, 10, 36, 6, 24] is sorted using the Insertion Sort algorithm. The sorted list is [6, 10, 12, 24, 36].
-
+```
 - Merge Sort:
 Merge sort is a divide-and-conquer algorithm that divides the input list into smaller sublists, sorts them, and then merges them back together.
 It is a stable sorting algorithm and guarantees O(n log n) time complexity.
 Example: Sorting an array of numbers in ascending order.
-
+```
 Divide:
 Split the list [75, 28, 65, 30, 20] into two halves: [75, 28] and [65, 30, 20].
 Recursively sort:
@@ -481,12 +481,12 @@ Merge:
 Merge the sorted sublists [75] and [28] back together: [28, 75].
 Merge the sorted sublists [65] and [20, 30] back together: [20, 30, 65].
 Now, merge the two sorted halves [28, 75] and [20, 30, 65]: [20, 28, 30, 65, 75].
-
+```
 - Quick Sort:
 Quick sort is a divide-and-conquer algorithm that selects a pivot element and partitions the input list into two sublists: elements smaller than the pivot and elements larger than the pivot.
 It then recursively sorts the two sublists.
 Example: Sorting an array of numbers in ascending order.
-
+```
 Quick Sort algorithm on the list [2, 1, 3, 5, 4] with the pivot element set to 3.
 Partitioning Step:
 Start with the list [2, 1, 3, 5, 4].
@@ -516,5 +516,5 @@ Since both left and right sublists are sorted, no further action is needed.
 Result:
 Combine the sorted sublists [1, 2, 3, 4, 5].
 So, the sorted list using Quick Sort with the pivot element set to 3 is [1, 2, 3, 4, 5].
-
+```
 These algorithms provide different approaches to searching and sorting data, each with its own advantages and disadvantages in terms of time complexity, space complexity, stability, and ease of implementation.
