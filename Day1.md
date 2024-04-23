@@ -373,6 +373,28 @@ Selection sort divides the input list into two parts: sorted and unsorted.
 It repeatedly selects the smallest (or largest) element from the unsorted part and moves it to the sorted part.
 Example: Sorting an array of numbers in ascending order.
 
+given list [75, 28, 65, 30, 20].
+Selection Sort works by repeatedly finding the minimum element from the unsorted part of the list and swapping it with the first unsorted element. Here's how it works step by step:
+Pass 1:
+Find the minimum element in the entire list and swap it with the first element.
+The minimum element is 20, so swap it with 75.
+The list becomes [20, 28, 65, 30, 75].
+Pass 2:
+Find the minimum element in the sublist starting from the second element and swap it with the second element.
+The minimum element is 28, so leave it as it is.
+The list remains [20, 28, 65, 30, 75].
+Pass 3:
+Find the minimum element in the sublist starting from the third element and swap it with the third element.
+The minimum element is 30, so swap it with 65.
+The list becomes [20, 28, 30, 65, 75].
+Pass 4:
+Find the minimum element in the sublist starting from the fourth element and swap it with the fourth element.
+The minimum element is 65, so leave it as it is.
+The list remains [20, 28, 30, 65, 75].
+Pass 5:
+There is only one element left, so no action is needed.
+Now, the list [75, 28, 65, 30, 20] is sorted using the Selection Sort algorithm. The sorted list is [20, 28, 30, 65, 75].
+
 - Insertion Sort:
 Insertion sort builds the final sorted list one element at a time by repeatedly taking the next element and inserting it into the proper position in the already sorted part.
 Example: Sorting an array of numbers in ascending order.
@@ -409,9 +431,51 @@ Merge sort is a divide-and-conquer algorithm that divides the input list into sm
 It is a stable sorting algorithm and guarantees O(n log n) time complexity.
 Example: Sorting an array of numbers in ascending order.
 
+Divide:
+Split the list [75, 28, 65, 30, 20] into two halves: [75, 28] and [65, 30, 20].
+Recursively sort:
+Apply Merge Sort to each half:
+For [75, 28]: Split into [75] and [28], no further split needed.
+For [65, 30, 20]: Split into [65] and [30, 20], then split [30, 20] into [30] and [20].
+Now, merge the sorted sublists: [20, 30].
+Merge:
+Merge the sorted sublists [75] and [28] back together: [28, 75].
+Merge the sorted sublists [65] and [20, 30] back together: [20, 30, 65].
+Now, merge the two sorted halves [28, 75] and [20, 30, 65]: [20, 28, 30, 65, 75].
+
 - Quick Sort:
 Quick sort is a divide-and-conquer algorithm that selects a pivot element and partitions the input list into two sublists: elements smaller than the pivot and elements larger than the pivot.
 It then recursively sorts the two sublists.
 Example: Sorting an array of numbers in ascending order.
+
+Quick Sort algorithm on the list [2, 1, 3, 5, 4] with the pivot element set to 3.
+Partitioning Step:
+Start with the list [2, 1, 3, 5, 4].
+Choose the pivot element 3.
+Partition the list around the pivot:
+Elements less than 3 (1, 2) on the left side.
+Pivot element 3 in the middle.
+Elements greater than 3 (4, 5) on the right side.
+The partitioned list becomes [2, 1, 3, 5, 4] (left sublist) | 3 (pivot) | [5, 4] (right sublist).
+Recursive Sorting:
+Apply Quick Sort recursively to the left and right sublists.
+Left sublist [2, 1]:
+Choose the pivot element 2.
+Partition the sublist around the pivot:
+Elements less than 2 (1) on the left side.
+Pivot element 2 in the middle.
+Elements greater than 2 (empty) on the right side.
+The partitioned sublist becomes [1] (left sublist) | 2 (pivot) | [] (right sublist).
+Since both left and right sublists are sorted, no further action is needed.Right sublist [5, 4]:
+Choose the pivot element 5.
+Partition the sublist around the pivot:
+Elements less than 5 (4) on the left side.
+Pivot element 5 in the middle.
+Elements greater than 5 (empty) on the right side.
+The partitioned sublist becomes [4] (left sublist) | 5 (pivot) | [] (right sublist).
+Since both left and right sublists are sorted, no further action is needed.
+Result:
+Combine the sorted sublists [1, 2, 3, 4, 5].
+So, the sorted list using Quick Sort with the pivot element set to 3 is [1, 2, 3, 4, 5].
 
 These algorithms provide different approaches to searching and sorting data, each with its own advantages and disadvantages in terms of time complexity, space complexity, stability, and ease of implementation.
