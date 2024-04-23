@@ -288,13 +288,52 @@ Examples: Hash tables, dictionaries, associative arrays.
 Trees are non-linear data structures consisting of nodes connected hierarchically.
 Each node can have zero or more child nodes, forming a tree-like structure.
 Examples: Binary trees, AVL trees, B-trees, Trie.
+Insertion:
+Description: Insertion involves adding a new node to the tree. The new node is typically placed in a specific position according to the tree's ordering properties (e.g., for binary search trees, nodes with values less than the parent node are placed to the left, and nodes with values greater than the parent node are placed to the right).
+Algorithm:
+Start at the root of the tree.
+Traverse the tree from the root downwards, comparing the value of the new node with each node visited.
+If the value of the new node is less than the current node, move to the left subtree; if greater, move to the right subtree.
+Repeat this process until reaching a leaf node (a node with no children), then insert the new node as a child of this leaf node.
+Deletion:
+Description: Deletion involves removing a specific node from the tree while maintaining the tree's structural integrity and ordering properties.
+Algorithm:
+Find the node to be deleted.
+If the node has no children, simply remove it from the tree.
+If the node has one child, replace the node with its child.
+If the node has two children, find the node's in-order successor (or predecessor), replace the node's value with the successor's value, and then delete the successor node from its original position.
+Traversal:
+Description: Traversal involves visiting each node in the tree in a specific order to perform operations such as printing, searching, or processing data.
+Inorder Traversal: Traverse the left subtree, visit the root node, and then traverse the right subtree.
+Preorder Traversal: Visit the root node, traverse the left subtree, and then traverse the right subtree.
+Postorder Traversal: Traverse the left subtree, traverse the right subtree, and then visit the root node.
+Level-order Traversal: Visit nodes level by level, starting from the root and moving to the next level.
+Search:
+Description: Searching involves finding a specific node or determining if a node with a given value exists in the tree.
+Algorithm:
+Start at the root of the tree.
+Traverse the tree from the root downwards, comparing the value of the target node with each node visited.
+If the value matches the target value, return the node.
+If the value is less than the current node, move to the left subtree; if greater, move to the right subtree.
+Repeat this process until reaching a leaf node (a node with no children), then return null (if the target node is not found).
+Balancing (for balanced trees):
+Description: Balancing involves adjusting the structure of the tree to ensure that it remains balanced after insertions and deletions, maintaining efficient search, insertion, and deletion operations.
+Algorithms:
+AVL trees: Ensure that the height difference between the left and right subtrees (balance factor) of every node is within a specified range (-1, 0, or 1).
+Red-Black trees: Enforce additional constraints on the tree's structure, such as maintaining the black height of each path from the root to the leaves.
+B-trees: Maintain a balanced tree structure by grouping nodes into blocks or pages and allowing multiple keys per node.
+Modification:
+Description: Modification involves updating the value of a node in the tree if necessary while maintaining the tree's structural integrity and ordering properties.
+Enumeration:
+Description: Enumeration involves iterating through all nodes in the tree using a specific traversal algorithm to access each node.
+These operations form the foundation for working with tree data structures, allowing efficient manipulation and retrieval of data in various applications, including database indexing, hierarchical data representation, and efficient searching and sorting algorithms.
 
-2. Graphs:
+3. Graphs:
 Graphs are non-linear data structures consisting of nodes (vertices) connected by edges.
 Nodes can have multiple connections, and edges can be directed or undirected.
 Examples: Directed graph, undirected graph, weighted graph.
 
-3. Sets:
+4. Sets:
 Sets are non-linear data structures that store unique elements without any particular order.
 They ensure that no duplicate elements are stored, making them suitable for various mathematical and computational operations.
 Examples: Hash sets, tree sets, bit sets.
