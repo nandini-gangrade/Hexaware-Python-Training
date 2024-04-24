@@ -143,6 +143,16 @@ SELECT * FROM Movies WHERE Title LIKE 'Toy Story%';
 ```
 This command selects all movies with titles starting with "Toy Story".
 
+```sql
+SELECT * FROM Movies WHERE Title LIKE 'Toy Story_';
+```
+This command selects all movies with titles exactly matching "Toy Story" followed by one additional character.
+
+```sql
+SELECT * FROM Movies WHERE Title LIKE '%Toy Story%';
+```
+This command selects all movies with "Toy Story" appearing anywhere in the title.
+
 **2. Find all the movies directed by John Lasseter:**
 ```sql
 SELECT * FROM Movies WHERE Director = 'John Lasseter';
