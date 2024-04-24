@@ -54,7 +54,7 @@
 ![WhatsApp Image 2024-04-24 at 12 31 34_575710c6](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/6727dbf1-6dbc-4c59-9501-a367d5ba66c6)
 ![WhatsApp Image 2024-04-24 at 12 31 34_9794d172](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/840f6354-9d43-4bf9-98b5-fa2bfe2f7686)
 
-#### Exercise 1 
+### Exercise 1 
 
 1. **Find the title of each film:**
    ```sql
@@ -94,7 +94,7 @@
 ![WhatsApp Image 2024-04-24 at 12 44 33_a4c96844](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/29c03576-6541-4bfa-be78-64074915bacd)
 ![WhatsApp Image 2024-04-24 at 12 45 52_e507cd36](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/13572ac7-e919-460e-8022-efbf62281e2f)
 
-#### Exercise 2
+### Exercise 2
 
 1. **Find the movie with a row id of 6:**
    ```sql
@@ -135,3 +135,30 @@
 
 ## Text Comparison Operators
 ![WhatsApp Image 2024-04-24 at 13 05 32_d9f7ae18](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/f9ed886d-630f-4ada-bd5a-4b51b373198c)
+![WhatsApp Image 2024-04-24 at 14 13 57_3b93bc1e](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/86867eb5-75c4-4d55-a295-e4abdadf74f8)
+
+**1. Find all the Toy Story movies:**
+```sql
+SELECT * FROM Movies WHERE Title LIKE 'Toy Story%';
+```
+This command selects all movies with titles starting with "Toy Story".
+
+**2. Find all the movies directed by John Lasseter:**
+```sql
+SELECT * FROM Movies WHERE Director = 'John Lasseter';
+```
+This command selects all movies directed by "John Lasseter".
+
+**3. Find all the movies (and director) not directed by John Lasseter:**
+```sql
+SELECT * FROM Movies WHERE Director != 'John Lasseter';
+```
+This command selects all movies not directed by "John Lasseter".
+
+**4. Find all the WALL movies:**
+```sql
+SELECT * FROM Movies WHERE Title LIKE '%WALL%';
+```
+This command selects all movies with "WALL" in their title.
+
+> These SQL operators and wildcards are commonly used for pattern matching and comparison in queries to filter rows based on specific conditions or patterns.
