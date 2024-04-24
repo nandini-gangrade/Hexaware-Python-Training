@@ -137,6 +137,8 @@
 ![WhatsApp Image 2024-04-24 at 13 05 32_d9f7ae18](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/f9ed886d-630f-4ada-bd5a-4b51b373198c)
 ![WhatsApp Image 2024-04-24 at 14 13 57_3b93bc1e](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/86867eb5-75c4-4d55-a295-e4abdadf74f8)
 
+### Exercise 4
+
 **1. Find all the Toy Story movies:**
 ```sql
 SELECT * FROM Movies WHERE Title LIKE 'Toy Story%';
@@ -172,3 +174,77 @@ SELECT * FROM Movies WHERE Title LIKE '%WALL%';
 This command selects all movies with "WALL" in their title.
 
 > These SQL operators and wildcards are commonly used for pattern matching and comparison in queries to filter rows based on specific conditions or patterns.
+
+## Refining Results with Filtering and Sorting
+
+![WhatsApp Image 2024-04-24 at 14 31 00_500ca04b](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/c6855890-22c2-4ea9-951c-592c432d5af4)
+![WhatsApp Image 2024-04-24 at 14 31 00_fdae9189](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/e00a977c-c8b8-4f89-a486-27ce0261bda6)
+![WhatsApp Image 2024-04-24 at 14 31 00_a577c040](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/0faf7a3a-f5f0-4ef7-b984-4b7bc3813585)
+
+### Exercise 4
+
+**1. List all directors of Pixar movies (alphabetically), without duplicates**
+```sql
+SELECT DISTINCT Director FROM Movies WHERE Director LIKE '%Pixar%' ORDER BY Director;
+```
+This command selects all unique directors from the Movies table whose names contain "Pixar" and orders them alphabetically without duplicates.
+
+**2. List the last four Pixar movies released (ordered from most recent to least)**
+```sql
+SELECT * FROM Movies WHERE Director LIKE '%Pixar%' ORDER BY Id DESC LIMIT 4;
+```
+This command selects the last four movies from the Movies table whose directors contain "Pixar" and orders them by their Id in descending order, representing the most recent releases.
+
+**3. List the first five Pixar movies sorted alphabetically**
+```sql
+SELECT * FROM Movies WHERE Director LIKE '%Pixar%' ORDER BY Title ASC LIMIT 5;
+```
+This command selects the first five movies from the Movies table whose directors contain "Pixar" and orders them alphabetically by their title in ascending order.
+
+**4. List the next five Pixar movies sorted alphabetically**
+```sql
+SELECT * FROM Movies WHERE Director LIKE '%Pixar%' ORDER BY Title ASC LIMIT 5 OFFSET 5;
+```
+This command selects the next five movies from the Movies table whose directors contain "Pixar" and orders them alphabetically by their title in ascending order, starting from the sixth row.
+
+> These SQL commands provide various queries to retrieve information about Pixar movies, sorted and limited in different ways to meet specific requirements. Utilizing SQL commands like ORDER BY, LIMIT, and DISTINCT to narrow down and organize data according to specific criteria, ensuring clarity and relevance in the result set.
+
+## Geographic Data Analysis: SQL Queries
+
+![WhatsApp Image 2024-04-24 at 14 47 41_d3f62ca4](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/c3f639ea-5c99-4ce4-8c76-07fb65c4c053)
+![WhatsApp Image 2024-04-24 at 14 49 29_8eb55b4c](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/f0a74157-5d06-405a-a4d2-9573bd55b24f)
+
+### Exercise 5
+
+**1. List all the Canadian cities and their populations:**
+```sql
+SELECT City, Population FROM North_American_Cities WHERE Country = 'Canada';
+```
+This command retrieves cities and their populations from the North American Cities table specifically for Canada. It helps understand the distribution of population within Canada.
+
+**2. Order all the cities in the United States by the latitude from north to south:**
+```sql
+SELECT City, Latitude FROM North_American_Cities WHERE Country = 'United States' ORDER BY Latitude DESC;
+```
+By ordering cities based on latitude in descending order, this query sorts them from north to south. This arrangement aligns with the fact that latitude increases towards the North Pole, providing insights into the geographical layout of cities in the United States.
+
+**3. List all the cities west of Chicago, ordered from west to east:**
+```sql
+SELECT City FROM North_American_Cities WHERE Longitude < (SELECT Longitude FROM North_American_Cities WHERE City = 'Chicago') ORDER BY Longitude ASC;
+```
+This command retrieves cities located west of Chicago and orders them from west to east based on longitude. It aligns with the principle that as longitude increases towards the east, cities are arranged from west to east.
+
+**4. List the two largest cities in Mexico by population:**
+```sql
+SELECT City, Population FROM North_American_Cities WHERE Country = 'Mexico' ORDER BY Population DESC LIMIT 2;
+```
+By ordering cities in Mexico by population in descending order and limiting the result to the top two, this query identifies the two largest cities in Mexico. It provides insights into the demographic distribution and urbanization within the country.
+
+**5. List the third and fourth largest cities by population in the United States:**
+```sql
+SELECT City, Population FROM North_American_Cities WHERE Country = 'United States' ORDER BY Population DESC LIMIT 2 OFFSET 2;
+```
+This command retrieves the third and fourth largest cities in the United States by population. By skipping the first two results and then limiting to the next two, it provides insights into the population hierarchy and urbanization trends within the country.
+
+> Explore how the relationship between longitude and latitude impacts geographic positioning: longitude increases towards the east, while latitude increases towards the north.
+
