@@ -280,14 +280,90 @@ This query retrieves the titles of all movies along with their ratings, ordering
 
 > Multi-table queries with JOINs allow combining data from multiple tables based on common columns, facilitating the retrieval of related information in a single result set.
 
-## <a href = ""></a>
+## <a href = "https://sqlbolt.com/lesson/select_queries_with_outer_joins">Lesson 7: OUTER JOINs</a>
+
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/f4171669-001c-4a89-aa82-15f76b1a2518)
+
+### Exercise 7 
+
+**1. Find the list of all buildings that have employees:**
+```sql
+SELECT DISTINCT Building
+FROM Employees;
+```
+This query retrieves the distinct list of buildings from the Employees table, indicating all buildings where employees are assigned.
+
+**2. Find the list of all buildings and their capacity:**
+```sql
+SELECT Building_name, Capacity
+FROM Buildings;
+```
+This query retrieves the list of all buildings along with their respective capacities from the Buildings table.
+
+**3. List all buildings and the distinct employee roles in each building (including empty buildings):**
+```sql
+SELECT b.Building_name, b.Capacity, e.Role
+FROM Buildings b
+LEFT JOIN Employees e ON b.Building_name = e.Building;
+```
+This query uses a LEFT JOIN to combine the Buildings and Employees tables, ensuring that all buildings are included in the result set even if they have no associated employees. It lists each building along with its capacity and the distinct employee roles present in each building.
 
 
-## <a href = ""></a>
+## <a href = "https://sqlbolt.com/lesson/select_queries_with_nulls">Lesson 8: A short note on NULLs</a>
 
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/66ba948b-3b68-4817-971d-f4518739c0f2)
 
-## <a href = ""></a>
+### Exercise 8
 
+**1. Find the name and role of all employees who have not been assigned to a building:**
+```sql
+SELECT Name, Role
+FROM Employees
+WHERE Building IS NULL;
+```
+This query selects the names and roles of employees from the Employees table where the Building column is NULL, indicating that they have not been assigned to any building.
+
+**2. Find the names of the buildings that hold no employees:**
+```sql
+SELECT b.Building_name
+FROM Buildings b
+LEFT JOIN Employees e ON b.Building_name = e.Building
+WHERE e.Building IS NULL;
+```
+This query retrieves the names of buildings from the Buildings table that have no associated employees. It uses a LEFT JOIN between the Buildings and Employees tables, ensuring that all buildings are included in the result set, and then filters out those buildings where no employees are assigned.
+
+## <a href = "https://sqlbolt.com/lesson/select_queries_with_expressions">Lesson 9: Queries with expressions</a>
+
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/2ff28483-f276-4ef3-ab5f-951c50e80d0d)
+
+### Exercise 9
+**Exercise 9 — Tasks**
+
+**1. List all movies and their combined sales in millions of dollars:**
+```sql
+SELECT m.Title, 
+       (b.Domestic_sales + b.International_sales) / 1000000 AS Combined_sales_in_millions
+FROM Movies m
+JOIN Boxoffice b ON m.Id = b.Movie_id;
+```
+This query retrieves the titles of all movies along with their combined sales (domestic and international) converted into millions of dollars.
+
+**2. List all movies and their ratings in percent:**
+```sql
+SELECT m.Title, 
+       b.Rating * 10 AS Rating_percent
+FROM Movies m
+JOIN Boxoffice b ON m.Id = b.Movie_id;
+```
+This query retrieves the titles of all movies along with their ratings converted into percentages.
+
+**3. List all movies that were released on even-numbered years:**
+```sql
+SELECT *
+FROM Movies
+WHERE Year % 2 = 0;
+```
+This query retrieves all movies that were released on even-numbered years based on the Year column in the Movies table.
 
 ## <a href = ""></a>
 
