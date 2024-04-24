@@ -244,3 +244,91 @@ SELECT City, Population FROM North_American_Cities WHERE Country = 'United State
 This command retrieves the third and fourth largest cities in the United States by population. By skipping the first two results and then limiting to the next two, it provides insights into the population hierarchy and urbanization trends within the country.
 
 > Explore how the relationship between longitude and latitude impacts geographic positioning: longitude increases towards the east, while latitude increases towards the north.
+
+
+## <a href = "https://sqlbolt.com/lesson/select_queries_with_joins">Lesson 6: Multi-table queries with JOINs</a>
+
+![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/4aaa6f86-8688-4471-846f-96da33337336)
+
+### Exercise 6 
+
+**1. Find the domestic and international sales for each movie:**
+```sql
+SELECT m.Title, b.Domestic_sales, b.International_sales
+FROM Movies m
+JOIN Boxoffice b ON m.Id = b.Movie_id;
+```
+This query joins the Movies and Boxoffice tables on the Movie_id column to retrieve the title of each movie along with its domestic and international sales.
+
+**2. Show the sales numbers for each movie that did better internationally rather than domestically:**
+```sql
+SELECT m.Title, b.Domestic_sales, b.International_sales
+FROM Movies m
+JOIN Boxoffice b ON m.Id = b.Movie_id
+WHERE b.International_sales > b.Domestic_sales;
+```
+This query filters the results to show only the movies where the international sales exceeded the domestic sales, displaying their titles along with the respective sales numbers.
+
+**3. List all the movies by their ratings in descending order:**
+```sql
+SELECT m.Title, b.Rating
+FROM Movies m
+JOIN Boxoffice b ON m.Id = b.Movie_id
+ORDER BY b.Rating DESC;
+```
+This query retrieves the titles of all movies along with their ratings, ordering the results in descending order based on the movie ratings.
+
+> Multi-table queries with JOINs allow combining data from multiple tables based on common columns, facilitating the retrieval of related information in a single result set.
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
+
+
+## <a href = ""></a>
