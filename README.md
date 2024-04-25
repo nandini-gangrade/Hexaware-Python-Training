@@ -7,3 +7,5 @@
 - 17 May - Final Project Submission
   
 ![image](https://github.com/nandini-gangrade/Hexaware-Python-Training/assets/87817417/f0229964-bafa-4686-922d-369e97e200fb)
+
+<a href = "https://github.com/ragavkumarv/hexaware-material">Assignment & Case Study</a>
