@@ -12,3 +12,13 @@
 | Unique Key     | A unique key constraint ensures that all values in a column or a group of columns are unique. Unlike a primary key, a table can have multiple unique keys.        | `Designation` in Designation table                                                          | Ensures uniqueness within specified columns; useful for enforcing data integrity and constraints.           |
 | Composite Key  | A composite key is a combination of two or more columns that together uniquely identify each row in a table.                                                  | `{EmpID, EmpLicence}` in Employees table                                                     | Ensures uniqueness by combining multiple attributes; used when no single attribute can uniquely identify each row.  |
 
+---
+
+## ACID Property
+
+| ACID Property | Definition                                                                                                    | Example                                                                                                                                                  |
+|---------------|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Atomicity     | Ensures that either all operations in a transaction are completed successfully or none of them are.           | When transferring money between bank accounts, the entire transfer must either succeed (withdrawing from one account and depositing into the other) or fail. |
+| Consistency   | Ensures that the database remains in a consistent state before and after a transaction.                      | In a hotel booking system, if a room is booked, the system should ensure that the room is no longer available for booking.                            |
+| Isolation     | Ensures that the execution of multiple transactions concurrently does not interfere with each other.          | If two people try to book the same hotel room at the same time, the system should handle it so that one booking doesn't affect the other.             |
+| Durability    | Guarantees that once a transaction is committed, its changes are permanent and will not be lost.             | Saving a document on your computer: once you save it, you expect it to be there even if your computer crashes.                                        |
