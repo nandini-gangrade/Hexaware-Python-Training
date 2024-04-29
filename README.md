@@ -11,7 +11,7 @@
 
 ## DAILY PROGRESS
 
-| DAY       | DATE        | LINKS                                                                                  |
+| DAY       | DATE(YMD)      | LINKS                                                                                  |
 |------------|------------|-----------------------------------------------------------------------------------------|
 | 1 | 2024-04-22     | [Problem Solving Techniques & DS](https://github.com/nandini-gangrade/Hexaware-Python-Training/blob/main/1.%20Problem%20Solving%20Techniques%20%26%20DS.md)                                    |
 | 2 | 2024-04-23    | [Agile](https://github.com/nandini-gangrade/Hexaware-Python-Training/blob/main/2.%20Agile.md)                                                       |
