@@ -73,11 +73,6 @@ Code debt refers to the accumulation of technical debt in software development, 
 - In Python, slicing syntax is `[start:stop:step]`, where `start` is the starting index, `stop` is the stopping index (exclusive), and `step` is the step size.
 
 ```python
-msg = "Hi, all"
-print(msg[0:2])  # Output: "Hi"
-```
-
-```python
 # Initializing the variable with the quote
 quote = "Dream is something "
 
@@ -110,6 +105,11 @@ print("String in reverse order:", quote[::-1])
 # Output: "gni"
 # Reason: Negative indexing is used to access characters from the end of the string. '-1' refers to the last character, and '-4' refers to the fourth character from the end. The substring is printed in reverse order.
 print("Substring from the last character to the fourth character from the end in reverse order:", quote[-1:-4:-1])
+```
+
+```python
+msg = "Hi, all"
+print(msg[0:2])  # Output: "Hi"
 ```
 
 ### Case Methods:
