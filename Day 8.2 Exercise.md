@@ -77,6 +77,41 @@ msg = "Hi, all"
 print(msg[0:2])  # Output: "Hi"
 ```
 
+```python
+# Initializing the variable with the quote
+quote = "Dream is something "
+
+# Printing substring from index 1 to 3 (excluding 3)
+# Output: "re"
+# Reason: Slicing starts from index 1 ('r') and ends at index 3 ('e'), but 'e' is excluded from the result.
+print("Substring from index 1 to 3:", quote[1:3])
+
+# Printing the last character of the string
+# Output: " "
+# Reason: Negative indexing allows accessing characters from the end of the string. '-1' refers to the last character.
+print("Last character of the string:", quote[-1])
+
+# Printing substring from the fourth character from the end to the second character from the end (excluding the second character from the end)
+# Output: "hin"
+# Reason: Negative indexing is used to access characters from the end of the string. '-4' refers to the fourth character from the end, and '-1' refers to the second character from the end. The substring includes characters from '-4' up to, but not including, '-1'.
+print("Substring from the fourth character from the end to the second character from the end:", quote[-4:-1])
+
+# Printing characters from index 1 to 10 (excluding 10) with a step of 2
+# Output: "rmisos"
+# Reason: Slicing starts from index 1 ('r') and ends at index 10 ('g'), but 'g' is excluded from the result. A step of 2 is used, so every second character within the specified range is included in the output.
+print("Characters from index 1 to 10 with a step of 2:", quote[1:10:2])
+
+# Printing the string in reverse order
+# Output: " gnihtemos si maerD"
+# Reason: Negative step (-1) is used, which iterates over the string in reverse order.
+print("String in reverse order:", quote[::-1])
+
+# Printing substring from the last character to the fourth character from the end (excluding the fourth character from the end) in reverse order
+# Output: "gni"
+# Reason: Negative indexing is used to access characters from the end of the string. '-1' refers to the last character, and '-4' refers to the fourth character from the end. The substring is printed in reverse order.
+print("Substring from the last character to the fourth character from the end in reverse order:", quote[-1:-4:-1])
+```
+
 ### Case Methods:
 - Case methods are used to change the case of characters in a string.
 - They include `upper()`, `lower()`, `title()`, and `capitalize()` methods.
